@@ -12,8 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/matriculas")
 public class MatriculaController {
-
-  @Autowired
+	@Autowired
   private MatriculaServiceImpl service;
 
   @PostMapping
@@ -26,5 +25,5 @@ public class MatriculaController {
     return service.getAll(bairro);
   }
 
+  
 }
-
